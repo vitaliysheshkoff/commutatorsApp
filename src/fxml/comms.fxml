@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.MenuButton?>
+<?import javafx.scene.control.MenuItem?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="main_pain" focusTraversable="true" onKeyPressed="#keyHandler" prefHeight="400.0" prefWidth="900.0" style="-fx-background-color: #000000;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.CommsController">
+   <Button alignment="CENTER" contentDisplay="CENTER" focusTraversable="false" layoutX="811.0" layoutY="154.0" mnemonicParsing="false" onAction="#showWordsButton" prefHeight="31.0" prefWidth="65.0" snapToPixel="false" text="show" textAlignment="CENTER" visible="false">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Button>
+   <TextField fx:id="commsField_output" alignment="CENTER" editable="false" focusTraversable="false" layoutX="126.0" layoutY="248.0" maxHeight="50.0" maxWidth="652.0" minHeight="50.0" minWidth="652.0" mouseTransparent="true" pickOnBounds="false" prefHeight="50.0" prefWidth="652.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="102.0" AnchorPane.leftAnchor="126.0" AnchorPane.rightAnchor="122.0" AnchorPane.topAnchor="248.0">
+      <font>
+         <Font size="30.0" />
+      </font>
+   </TextField>
+   <TextField fx:id="wordsField_output" accessibleRole="TEXT" alignment="CENTER" blendMode="SCREEN" cacheShape="false" focusTraversable="false" layoutX="103.0" layoutY="154.0" onMouseClicked="#wordsFieldOutput" pickOnBounds="false" prefHeight="39.0" prefWidth="697.0" style="-fx-background-color: #FFFFFF;" AnchorPane.bottomAnchor="207.0" AnchorPane.leftAnchor="103.0" AnchorPane.rightAnchor="100.0" AnchorPane.topAnchor="154.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </TextField>
+   <Button focusTraversable="false" layoutX="778.0" layoutY="37.0" mnemonicParsing="false" onAction="#goTimer" prefHeight="23.0" prefWidth="118.0" style="-fx-background-color: #ffffff;" text="Go timer" AnchorPane.rightAnchor="-2.0" AnchorPane.topAnchor="0.0" />
+   <Text strokeType="OUTSIDE" strokeWidth="0.0" text="Text" />
+   <Text fill="WHITE" layoutX="417.0" layoutY="136.0" strokeType="OUTSIDE" strokeWidth="0.0" text="words" wrappingWidth="64.06640625">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Text>
+   <Text fill="WHITE" layoutX="379.0" layoutY="233.0" strokeType="OUTSIDE" strokeWidth="0.0" text="commutators">
+      <font>
+         <Font size="24.0" />
+      </font>
+   </Text>
+   <Label layoutX="382.0" layoutY="25.0" prefHeight="50.0" prefWidth="141.0" text="CommsApp" textFill="WHITE" AnchorPane.leftAnchor="382.0" AnchorPane.rightAnchor="377.0" AnchorPane.topAnchor="25.0">
+      <font>
+         <Font size="27.0" />
+      </font>
+   </Label>
+   <MenuButton fx:id="choice_menu" focusTraversable="false" graphicTextGap="1.0" layoutX="-2.0" mnemonicParsing="false" prefHeight="25.0" prefWidth="126.0" style="-fx-background-color: #ffffff;" text="Corners" AnchorPane.leftAnchor="-2.0" AnchorPane.topAnchor="0.0">
+      <items>
+         <MenuItem mnemonicParsing="false" onAction="#switchToMixedFile" text="mixed" />
+         <MenuItem mnemonicParsing="false" onAction="#switchToFirstFile" text="1)UtopD-side" />
+         <MenuItem mnemonicParsing="false" onAction="#switchToSecondFile" text="2)2UtopD-bottom" />
+         <MenuItem mnemonicParsing="false" onAction="#switchToThirdFile" text="3)D-bottomD-bottom" />
+         <MenuItem mnemonicParsing="false" onAction="#switchToFourthFile" text="4)D-sideD-side" />
+      </items>
+   </MenuButton>
+</AnchorPane>

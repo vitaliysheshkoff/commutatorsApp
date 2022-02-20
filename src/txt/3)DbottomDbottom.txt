@@ -1,0 +1,12 @@
+U' R' U R D R U' R' D' R U R2 U' R U
+R U' R' D2 R' U R D2 R' U' R2 U R' 
+F2 Rw D Rw' F2 Rw D' Rw'
+U' R' U R2 U' R' D R U R' D' R' U' R U
+F' R U' R' D' R U2 R' D R U' R' F
+R U' R' U R D' R' U2 R D R' U R U R' 
+U' R' U R U' R' D R U2 R' D' R U' R' U' R U
+F' R U R' D' R U2 R' D R U R' F
+R U' R2 U R D' R' U' R D R U R'
+Rw D Rw' F2 Rw D' Rw' F2
+R U' R' U' R D' R' U2 R D R' U' R U R'
+R U' R' D' R' U R D R' U' R2 U R'

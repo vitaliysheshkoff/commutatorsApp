@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="commutatorsApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/commutatorsApp_jar</output-path>
+    <root id="archive" name="commutatorsApp.jar">
+      <element id="module-output" name="commutatorsApp" />
+    </root>
+  </artifact>
+</component>
