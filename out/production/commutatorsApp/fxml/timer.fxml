@@ -1,0 +1,288 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.Insets?>
+<?import javafx.geometry.Point3D?>
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.ListView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Blend?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.shape.Rectangle?>
+<?import javafx.scene.text.Font?>
+<?import javafx.scene.text.Text?>
+
+<AnchorPane fx:id="timer_pane" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="400.0" prefWidth="900.0" snapToPixel="false" style="-fx-background-color: #ffffff;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="controllers.TimerController">
+   <Text layoutX="424.0" layoutY="40.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Timer" textAlignment="CENTER" AnchorPane.leftAnchor="424.0" AnchorPane.rightAnchor="428.00005493164065" AnchorPane.topAnchor="20.576171875">
+      <font>
+         <Font size="18.0" />
+      </font>
+   </Text>
+   <Pane layoutX="228.5" layoutY="123.0" prefHeight="89.0" prefWidth="443.0" snapToPixel="false" AnchorPane.rightAnchor="228.5" AnchorPane.topAnchor="123.0">
+      <Label fx:id="minutes_label" alignment="CENTER" layoutX="114.0" layoutY="4.0" prefHeight="80.0" prefWidth="100.0" style="-fx-background-color: #000000;" text="00" textFill="WHITE">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label fx:id="second_label" alignment="CENTER" layoutX="228.0" layoutY="4.0" prefHeight="80.0" prefWidth="100.0" style="-fx-background-color: #000000;" text="00" textFill="WHITE">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label fx:id="milliseconds_label" alignment="CENTER" layoutX="342.0" layoutY="3.587890625" prefHeight="80.0" prefWidth="100.0" style="-fx-background-color: #000000;" text="00" textFill="WHITE">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Label fx:id="hours_label" alignment="CENTER" layoutY="3.587890625" prefHeight="80.0" prefWidth="100.0" style="-fx-background-color: #000000;" text="00" textFill="WHITE">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Label>
+      <Text layoutX="215.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+      <Text layoutX="329.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text="." textAlignment="CENTER">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+      <Text layoutX="101.0" layoutY="63.0" strokeType="OUTSIDE" strokeWidth="0.0" text=":" textAlignment="CENTER">
+         <font>
+            <Font size="58.0" />
+         </font>
+      </Text>
+   </Pane>
+   <TextField fx:id="scramble_field" alignment="CENTER" editable="false" focusTraversable="false" layoutX="75.0" layoutY="51.0" pickOnBounds="false" prefHeight="51.0" prefWidth="724.0" translateX="1.0" translateY="1.0" translateZ="1.0" AnchorPane.leftAnchor="75.0" AnchorPane.rightAnchor="75.0" AnchorPane.topAnchor="51.0">
+      <font>
+         <Font size="24.0" />
+      </font>
+      <rotationAxis>
+         <Point3D />
+      </rotationAxis>
+   </TextField>
+   <Pane layoutX="624.0" layoutY="194.0" prefHeight="206.0" prefWidth="276.0" AnchorPane.bottomAnchor="0.0" AnchorPane.rightAnchor="0.0">
+      <Pane layoutX="1.5" layoutY="68.5">
+         <Rectangle fx:id="_37" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_38" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_39" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_40" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_41" arcHeight="5.0" arcWidth="5.0" fill="ORANGE" height="20.0" layoutX="23.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_42" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_43" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_44" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_45" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+      </Pane>
+      <Pane layoutX="70.5" layoutY="68.5">
+         <Rectangle fx:id="_19" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_20" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_21" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_22" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_23" arcHeight="5.0" arcWidth="5.0" fill="LIME" height="20.0" layoutX="23.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_24" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_25" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_26" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_27" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+      </Pane>
+      <Pane layoutX="139.5" layoutY="68.5">
+         <Rectangle fx:id="_10" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_11" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_12" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_13" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_14" arcHeight="5.0" arcWidth="5.0" fill="FIREBRICK" height="20.0" layoutX="23.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_15" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_16" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_17" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_18" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+      </Pane>
+      <Pane layoutX="207.5" layoutY="68.5">
+         <Rectangle fx:id="_46" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_47" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_48" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_49" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_50" arcHeight="5.0" arcWidth="5.0" fill="MEDIUMBLUE" height="20.0" layoutX="23.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_51" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_52" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_53" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_54" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+      </Pane>
+      <Pane layoutX="70.5" layoutY="137.5">
+         <Rectangle fx:id="_28" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_29" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_30" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_31" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_32" arcHeight="5.0" arcWidth="5.0" fill="YELLOW" height="20.0" layoutX="23.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_33" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_34" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_35" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_36" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+      </Pane>
+      <Pane layoutX="71.0">
+         <Rectangle fx:id="_1" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_2" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_3" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_4" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_5" arcHeight="5.0" arcWidth="5.0" fill="FLORALWHITE" height="20.0" layoutX="23.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_6" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="23.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_7" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_8" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="23.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+         <Rectangle fx:id="_9" arcHeight="5.0" arcWidth="5.0" fill="WHITE" height="20.0" layoutX="46.0" layoutY="46.0" stroke="BLACK" strokeLineCap="ROUND" strokeLineJoin="ROUND" strokeWidth="3.0" width="20.0" />
+      </Pane>
+   </Pane>
+   <Pane layoutX="4.0" layoutY="122.0" prefHeight="104.0" prefWidth="222.0" AnchorPane.leftAnchor="4.0" AnchorPane.topAnchor="122.0">
+         <Label prefHeight="20.0" prefWidth="51.0" text="time:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+         <Label layoutY="14.0" prefHeight="20.0" prefWidth="51.0" text="mo3:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+         <Label layoutY="28.0" prefHeight="20.0" prefWidth="51.0" text="avg5:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+         <Label layoutY="42.0" prefHeight="20.0" prefWidth="51.0" text="avg12:">
+         <font>
+            <Font size="14.0" />
+         </font></Label>
+      <Label layoutY="56.0" prefHeight="20.0" prefWidth="51.0" text="avg25:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutY="70.0" prefHeight="20.0" prefWidth="51.0" text="avg50:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutY="84.0" prefHeight="20.0" prefWidth="51.0" text="avg100:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="current_time" alignment="CENTER" layoutX="52.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="best_time" alignment="CENTER" layoutX="136.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="current_mo3" alignment="CENTER" layoutX="52.0" layoutY="14.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="current_avg5" alignment="CENTER" layoutX="52.0" layoutY="28.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="current_avg12" alignment="CENTER" layoutX="52.0" layoutY="42.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="current_avg25" alignment="CENTER" layoutX="52.0" layoutY="56.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="current_avg50" alignment="CENTER" layoutX="52.0" layoutY="70.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="current_avg100" alignment="CENTER" layoutX="52.0" layoutY="84.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="best_mo3" alignment="CENTER" layoutX="136.0" layoutY="14.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="best_avg5" alignment="CENTER" layoutX="136.0" layoutY="28.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="best_avg12" alignment="CENTER" layoutX="136.0" layoutY="42.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="best_avg25" alignment="CENTER" layoutX="136.0" layoutY="56.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="best_avg50" alignment="CENTER" layoutX="136.0" layoutY="70.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="best_avg100" alignment="CENTER" layoutX="136.0" layoutY="84.0" prefHeight="20.0" prefWidth="80.0" text="-" textAlignment="CENTER">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+   </Pane>
+   <Pane fx:id="go_commutators" layoutX="-2.0" layoutY="-35.0" prefHeight="80.0" prefWidth="80.0">
+      <ImageView accessibleRole="BUTTON" fitHeight="80.0" fitWidth="80.0" layoutX="-2.0" layoutY="7.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../resources/sleepingMask.png" />
+      </ImageView>
+      <ImageView fitHeight="30.0" fitWidth="30.0" layoutX="25.0" layoutY="51.0" pickOnBounds="true" preserveRatio="true">
+         <Image url="@../resources/cube.png" />
+      </ImageView>
+   </Pane>
+   <ListView fx:id="timesList" focusTraversable="false" layoutY="207.0" nodeOrientation="LEFT_TO_RIGHT" pickOnBounds="false" prefHeight="136.0" prefWidth="369.0" AnchorPane.bottomAnchor="0.0" AnchorPane.leftAnchor="0.0">
+      <opaqueInsets>
+         <Insets />
+      </opaqueInsets>
+      <rotationAxis>
+         <Point3D />
+      </rotationAxis>
+   </ListView>
+   <Label layoutX="1.0" layoutY="244.0" text="times list:" AnchorPane.leftAnchor="1.0">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="delete_all_times" layoutX="67.0" layoutY="241.0" text="X" AnchorPane.topAnchor="241.0">
+      <font>
+         <Font size="17.0" />
+      </font>
+   </Label>
+   <Label fx:id="delete_current_time" layoutX="117.0" layoutY="246.0" prefHeight="17.0" prefWidth="106.0" text="delete current time" textAlignment="CENTER" />
+   <Label layoutX="73.0" layoutY="105.0" text="current" textAlignment="CENTER">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label layoutX="166.0" layoutY="105.0" text="best" textAlignment="CENTER">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <Label fx:id="mean" layoutX="4.0" layoutY="221.0" prefHeight="20.0" prefWidth="115.0" text="mean:">
+      <font>
+         <Font size="14.0" />
+      </font>
+   </Label>
+   <cursor>
+      <Cursor fx:constant="DEFAULT" />
+   </cursor>
+   <effect>
+      <Blend />
+   </effect>
+</AnchorPane>
